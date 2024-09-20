@@ -75,8 +75,15 @@ const RegistrationForm = () => {
 
         if (Object.keys(formErrors).length === 0) {
             setErrors({}); // Clear errors
-            alert('Form submitted successfully!');
-            console.log('Form Data: ', formData);
+           setFormData({userId: '',
+            password: '',
+            name: '',
+            country: '',
+            zipCode: '',
+            email: '',
+            gender: '',
+            language: [],
+            about: '',})
         } else {
             setErrors(formErrors); // Set errors
         }
